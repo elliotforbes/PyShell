@@ -10,5 +10,5 @@ class sniffer():
         
     def run(self):
         print "hi"
-     #   while(1):
-     #      sock.recvfrom(65565)
+        while(1):
+            sock.recvfrom(65565)
