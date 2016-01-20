@@ -3,7 +3,7 @@ import socket
 # Our sniffer class that will do all our packet sniffing
 class sniffer():
     
-    #sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)
+    sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
     
     def __init__(self):
         print "Sniffer Initialized"
@@ -11,4 +11,5 @@ class sniffer():
     def run(self):
         print "hi"
         while(1):
-            sock.recvfrom(65565)
+            print(self.sock.recvfrom(65565))
+            
