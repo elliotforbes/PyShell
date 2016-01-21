@@ -13,3 +13,8 @@ class sniffer():
         while(1):
             print(self.sock.recvfrom(65565))
             
+    def discover(self):
+        print "Discovering other devices on network"
+        
+    
+            
